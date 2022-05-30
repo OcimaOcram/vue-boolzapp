@@ -43,9 +43,9 @@
                             <input class="search" type="text">
                         </form>
                     </div>
-                    <div v-for="(element, index) in contacts " :key="index" >
-                        <div class="col-12">
-                            <div class="display-inline-block">
+                    <div   v-for="(element, index) in contacts " :key="index" >
+                        <div class="col-12"   >
+                            <div class="display-inline-block" @click="changeChat">
                                 <img :src="element.avatar" alt=""> 
                                 <span>{{element.name}}</span>
                             </div>
@@ -76,7 +76,7 @@
                     <div class="col-12 bg-grey">
                         <div class="display-inline-block">
                             <img src="img/profilo.png" alt=""> 
-                            <span>Marco</span>
+                            <span>{{contacts[chatIndex].name}}</span>
                         </div>
                         <div class="float-right display-inline-block mt-14">
                             <i class="fa-solid fa-message"></i>
@@ -84,8 +84,11 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
+                    <div id="panello-conversazione">
 
+                        
 
+                    </div>
                     <div class="text">
 
 

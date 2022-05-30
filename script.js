@@ -2,6 +2,7 @@
 const app = new Vue ({
     el: "#app",
     data: {
+        chatIndex: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -166,9 +167,14 @@ const app = new Vue ({
             }
         ]
     
+    },
+    methods: {
+
+
+        changeChat(chatIndex) {
+        this.chatIndex = chatIndex;
+        }
     }
-
-
 
 
 
