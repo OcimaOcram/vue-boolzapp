@@ -59,3 +59,18 @@ i {
 .search {
     width: 100%;
 }
+
+.bg-grey {
+    background-color: grey;
+}
+
+.messaggio {
+    width: 90%;
+    float: right;
+}
+
+.posizione-form {
+    position: absolute;
+    bottom: 0px;
+    width: 55%;
+}

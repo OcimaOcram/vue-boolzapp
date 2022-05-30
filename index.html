@@ -44,8 +44,12 @@
                         </form>
                     </div>
                     <div v-for="(element, index) in contacts " :key="index" >
-                                {{element.name}}
-
+                        <div class="col-12">
+                            <div class="display-inline-block">
+                                <img :src="element.avatar" alt=""> 
+                                <span>{{element.name}}</span>
+                            </div>
+                        </div>
 
 
                     </div>
@@ -67,8 +71,34 @@
 
             </div>
 
-            <div class="col-8 p-0">
-                <div class="vh-100 light-green"></div>
+            <div class="col-8 p-0 ">
+                <div class="vh-100 light-green">
+                    <div class="col-12 bg-grey">
+                        <div class="display-inline-block">
+                            <img src="img/profilo.png" alt=""> 
+                            <span>Marco</span>
+                        </div>
+                        <div class="float-right display-inline-block mt-14">
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="text">
+
+
+
+                        <form class="posizione-form">
+                            <input class="messaggio" type="text">
+                        </form>
+                    </div>
+
+
+
+
+                </div>
 
             </div>
 

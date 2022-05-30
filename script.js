@@ -5,7 +5,7 @@ const app = new Vue ({
         contacts: [
             {
                 name: 'Michele',
-                avatar: '_1',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: true,
                 messages: [
                     {
@@ -27,7 +27,7 @@ const app = new Vue ({
             },
             {
                 name: 'Fabio',
-                avatar: '_2',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -49,7 +49,7 @@ const app = new Vue ({
             },
             {
                 name: 'Samuele',
-                avatar: '_3',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -71,7 +71,7 @@ const app = new Vue ({
             },
             {
                 name: 'Alessandro B.',
-                avatar: '_4',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -88,7 +88,7 @@ const app = new Vue ({
             },
             {
                 name: 'Alessandro L.',
-                avatar: '_5',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -105,7 +105,7 @@ const app = new Vue ({
             },
             {
                 name: 'Claudia',
-                avatar: '_6',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -127,7 +127,7 @@ const app = new Vue ({
             },
             {
                 name: 'Federico',
-                avatar: '_7',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -144,7 +144,7 @@ const app = new Vue ({
             },
             {
                 name: 'Davide',
-                avatar: '_8',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Profilo.svg/345px-Profilo.svg.png',
                 visible: false,
                 messages: [
                     {
@@ -165,7 +165,7 @@ const app = new Vue ({
                 ],
             }
         ]
-        task: ""
+    
     }
 
 
