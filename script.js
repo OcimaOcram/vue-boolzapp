@@ -178,9 +178,9 @@ const app = new Vue ({
         sentOReceived(status) {
                
             if (status == "received") {
-                return "sinistro messaggio"
+                return "sinistro "
             } else {
-                return "destro messaggio";
+                return "destro ";
             }
         },
 
