@@ -211,26 +211,26 @@ const app = new Vue ({
 
 
 
-            function risposta() {
-                const risposta = "Okay";
-                        const rispostaBot = {
-                            message: risposta,
-                            status : 'received'
-                        }
-                        
-                        this.contacts[this.chatIndex].messages.push(rispostaBot);
-            }
+            
 
 
-            setTimeout(risposta, 1000);
+            setTimeout(this.risposta, 1000);
 
 
             
           
             
 
+        },
 
-
+        risposta() {
+            const risposta = "Okay";
+            const rispostaBot = {
+                message: risposta,
+                status : 'received'
+            }
+                    
+            this.contacts[this.chatIndex].messages.push(rispostaBot);
         }
 
 
