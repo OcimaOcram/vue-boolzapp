@@ -173,9 +173,19 @@ const app = new Vue ({
 
         changeChat(chatIndex) {
         this.chatIndex = chatIndex;
-        }
-    }
+        },
 
+        sentOReceived(status) {
+               
+            if (status == "received") {
+                return "justify-content-start"
+            } else {
+                return "justify-content-end";
+            }
+        },
+    },
+
+      
 
 
 

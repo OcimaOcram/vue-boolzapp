@@ -44,31 +44,14 @@
                         </form>
                     </div>
                     <div   v-for="(element, index) in contacts " :key="index" >
-                        <div class="col-12"   >
-                            <div class="display-inline-block" @click="changeChat">
+                        <div class="col-12" @click="changeChat(index)" >
+                            <div class="display-inline-block" >
                                 <img :src="element.avatar" alt=""> 
                                 <span>{{element.name}}</span>
                             </div>
                         </div>
-
-
                     </div>
-
-
-
-
                 </div>
-                
-                
-
-
-
-
-
-
-
-
-
             </div>
 
             <div class="col-8 p-0 ">
@@ -84,10 +67,13 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div id="panello-conversazione">
-
+                    <div  id="panello-conversazione">
+                        <div v-for="aMessage in contacts [chatIndex].messages">
+                            <div :class="sentOReceived(status)">
+                                {{aMessage.message}}
+                            </div>
+                        </div>
                         
-
                     </div>
                     <div class="text">
 
