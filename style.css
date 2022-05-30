@@ -19,7 +19,7 @@
 
 .light-green {
 
-    background-color: lightgreen; ;
+    background-color: red; 
 }
 
 .p-0 {
@@ -73,4 +73,38 @@ i {
     position: absolute;
     bottom: 0px;
     width: 55%;
+}
+
+
+.mw-50 {
+    background-color: rgb(255, 0, 0);
+    max-width: 50%;
+
+}
+.destro {
+    
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sinistro {
+   
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+  
+}
+
+.sent-message {
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.recived-message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
 }

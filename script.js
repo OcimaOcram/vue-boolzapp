@@ -178,14 +178,28 @@ const app = new Vue ({
         sentOReceived(status) {
                
             if (status == "received") {
-                return "justify-content-start"
+                return "sinistro messaggio"
             } else {
-                return "justify-content-end";
+                return "destro messaggio";
             }
         },
+
+
+        sentOReceivedColor(status) {
+        
+            if (status == "received") {
+                return "recived-message"
+            } else {
+                return "sent-message";
+            }
+        },
+
+
+
+
     },
 
-      
+    
 
 
 

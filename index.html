@@ -67,10 +67,12 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div  id="panello-conversazione">
-                        <div v-for="aMessage in contacts [chatIndex].messages">
-                            <div :class="sentOReceived(status)">
+                    <div  id="panello-conversazione ">
+                        <div  v-for="aMessage in contacts[chatIndex].messages">
+                            <div  :class="sentOReceived(aMessage.status)">
+                                <div :class="sentOReceivedColor(aMessage.status)">
                                 {{aMessage.message}}
+                                </div>
                             </div>
                         </div>
                         
