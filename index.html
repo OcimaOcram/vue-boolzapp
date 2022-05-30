@@ -76,14 +76,17 @@
                             </div>
                         </div>
                         
+
+
+                        
                     </div>
                     <div class="text">
 
 
 
-                        <form class="posizione-form">
-                            <input class="messaggio" type="text">
-                        </form>
+                        <div class="posizione-form">
+                            <input @keyup.enter="aggiungi" v-model="nMessaggio" class="messaggio" type="text">
+                        </div>
                     </div>
 
 

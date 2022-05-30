@@ -1,8 +1,12 @@
 
+
+
+
 const app = new Vue ({
     el: "#app",
     data: {
         chatIndex: 0,
+        nMessaggio: "",
         contacts: [
             {
                 name: 'Michele',
@@ -194,7 +198,40 @@ const app = new Vue ({
             }
         },
 
+        aggiungi() {
+            const nuovo_mes = {
+                message: this.nMessaggio,
+                status : 'sent'
+            }
 
+            if (this.nMessaggio !== "") {
+                this.contacts[this.chatIndex].messages.push(nuovo_mes);
+                this.nMessaggio = "";
+            }
+
+
+
+            function risposta() {
+                const risposta = "Okay";
+                        const rispostaBot = {
+                            message: risposta,
+                            status : 'received'
+                        }
+                        
+                        this.contacts[this.chatIndex].messages.push(rispostaBot);
+            }
+
+
+            setTimeout(risposta, 1000);
+
+
+            
+          
+            
+
+
+
+        }
 
 
     },
@@ -204,3 +241,6 @@ const app = new Vue ({
 
 
 });
+
+
+
