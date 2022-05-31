@@ -39,9 +39,9 @@
                     </div>
                     <!-- form -->
                     <div class="col-12">
-                        <form>
-                            <input class="search" type="text">
-                        </form>
+                        <div>
+                            <input @input="trovaUser()" v-model="newSearch" class="search" type="text">
+                        </div>
                     </div>
                     <div   v-for="(element, index) in contacts " :key="index" >
                         <div class="col-12" @click="changeChat(index)" >

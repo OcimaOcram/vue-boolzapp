@@ -1,12 +1,10 @@
-
-
-
-
 const app = new Vue ({
     el: "#app",
     data: {
         chatIndex: 0,
         nMessaggio: "",
+        newSearch: "",
+        
         contacts: [
             {
                 name: 'Michele',
@@ -231,7 +229,32 @@ const app = new Vue ({
             }
                     
             this.contacts[this.chatIndex].messages.push(rispostaBot);
-        }
+        },
+
+
+        trovaUser(){
+            this.contacts.forEach((element, i) => {
+                if (this.contacts[i].name.toLowerCase().includes(this.newSearch.toLowerCase())) {
+                    this.contacts[i].visible = true;
+
+                } else {
+                    this.contacts[i].visible = false;
+                
+                }
+            });
+
+            if (visible = false) {
+
+                
+                
+            }
+
+
+
+
+
+        },
+
 
 
     },
@@ -241,6 +264,5 @@ const app = new Vue ({
 
 
 });
-
 
 
