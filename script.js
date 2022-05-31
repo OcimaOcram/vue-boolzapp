@@ -243,14 +243,6 @@ const app = new Vue ({
                 }
             });
 
-            if (visible = false) {
-
-                
-                
-            }
-
-
-
 
 
         },

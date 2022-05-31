@@ -40,11 +40,11 @@
                     <!-- form -->
                     <div class="col-12">
                         <div>
-                            <input @input="trovaUser()" v-model="newSearch" class="search" type="text">
+                            <input @keyup="trovaUser()" v-model="newSearch" class="search" type="text">
                         </div>
                     </div>
-                    <div   v-for="(element, index) in contacts " :key="index" >
-                        <div class="col-12" @click="changeChat(index)" >
+                    <div :class="[index === chatIndex ? 'active' : '', element.visible === false ? 'display-none' : '']" v-for="(element, index) in contacts " :key="index" >
+                        <div  class="col-12" @click="changeChat(index)" >
                             <div class="display-inline-block" >
                                 <img :src="element.avatar" alt=""> 
                                 <span>{{element.name}}</span>
